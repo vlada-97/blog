@@ -1,0 +1,24 @@
+mixin topic-card(type, topic, image)
+    .main__card
+        .main__card-img
+            img.main__card-picture(src=image)
+        .main__card-type=type
+        .main__card-topic=topic
+        .main__card-user
+            span.main__card-author Vlada Trapeznikova
+            span.main__card-date October 22, 2024
+            span.main__card-views 3K views
+        .main__card-description Description 
+
+main
+    .main
+        +topic-card("Gothic Style", "Some black street look", '../media/png/1.png')
+        +topic-card("Lifestyle", "Basic jeans look", '../media/png/2.png')
+        +topic-card("Summer Style", "Everyday look", '../media/png/3.png')
+        +topic-card("Summer Style", "Boy with jackets", '../media/png/4.png')
+        +topic-card("Summer Pool Party Style", "Summary tops and skirts look", '../media/png/5.png')
+        +topic-card("Cinema Style", "Cinema ultra-violence", '../media/png/6.png')
+        +topic-card("Summer Style", "Working with my friends in a cafe", '../media/png/7.png')
+        +topic-card("Summer Sea Style", "Me and the Sochi sunset", '../media/png/8.png')
+        +topic-card("Party Style", "My favorite night club", '../media/png/9.png')
+
