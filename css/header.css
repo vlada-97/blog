@@ -16,6 +16,7 @@ header{
     justify-content: center;
     align-items: center;
 }
+
 .header__top_right{
     display: flex;
     align-items: center;
@@ -59,13 +60,13 @@ header{
     cursor: pointer;
     box-sizing: border-box;
     margin-right: 1.8rem;
-    display: inline-flex;
 }
-.header__select-body{
+.header__select-body {
+    width: max-content;
     opacity: 0;
     visibility: hidden;
-    height: 0px;
-    transition: all  0.3s ease-in-out;
+    height: 0;
+    transition: all 0.3s ease-in-out;
 }
 .header__link{
     text-decoration: none;
